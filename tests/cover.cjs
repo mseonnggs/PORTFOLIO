@@ -1,0 +1,74 @@
+const {chromium}=require('playwright');
+const fs=require('node:fs');
+const path=require('node:path');
+const assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..');
+const data=JSON.parse(fs.readFileSync(path.join(root,'data.json'),'utf8'));
+const base=process.env.TEST_BASE_URL||'http://127.0.0.1:4173';
+(async()=>{
+  const browser=await chromium.launch({channel:process.env.TEST_BROWSER_CHANNEL||'chrome',headless:true});
+  const errors=[];
+  for(const viewport of [{width:360,height:800},{width:390,height:844},{width:768,height:1024},{width:1024,height:768},{width:1440,height:1000},{width:1920,height:1080}]){
+    const page=await browser.newPage({viewport,reducedMotion:'reduce'});
+    page.on('pageerror',e=>errors.push(e.message));
+    await page.goto(base,{waitUntil:'networkidle'});
+    await page.evaluate(()=>document.fonts.ready);
+    await page.locator('.cover-portrait').evaluate(img=>img.decode());
+    assert.equal(await page.locator('.slide.active').getAttribute('id'),'cover');
+    assert.equal(await page.locator('.floating-about').isVisible(),false);
+    assert.equal(await page.locator('.cover-tagline').innerText(),data.coverPage.tagline);
+    assert.equal(await page.locator('.cover-handwritten').innerText(),'PORTFOLIO');
+    assert.deepEqual(await page.locator('.cover-keyword').allTextContents(),data.coverPage.keywords);
+    const layout=await page.evaluate(()=>{
+      const sheet=document.querySelector('.cover-sheet').getBoundingClientRect();
+      const photo=document.querySelector('.cover-portrait'),portrait=photo.getBoundingClientRect();
+      const labels=[...document.querySelectorAll('.cover-keyword')].map(el=>el.getBoundingClientRect());
+      const range=document.createRange();range.selectNodeContents(document.querySelector('.cover-handwritten'));
+      const title=range.getBoundingClientRect();
+      const overlap=(a,b)=>a.left<b.right-1&&a.right>b.left+1&&a.top<b.bottom-1&&a.bottom>b.top+1;
+      const conflicts=[];
+      if(overlap(portrait,title))conflicts.push('portrait-title');
+      if(title.top-portrait.bottom<12)conflicts.push('portrait-title-gap');
+      labels.forEach((a,i)=>{
+        if(overlap(a,portrait))conflicts.push('photo-'+i);
+        if(overlap(a,title))conflicts.push('title-'+i);
+        for(let j=i+1;j<labels.length;j++)if(overlap(a,labels[j]))conflicts.push('labels-'+i+'-'+j);
+      });
+      const s=getComputedStyle(photo);
+      return {conflicts,filter:s.filter,fit:s.objectFit,natural:[photo.naturalWidth,photo.naturalHeight],ratio:(portrait.width-2)/(portrait.height-2),cropped:[portrait,title,...labels].some(r=>r.left<sheet.left-1||r.right>sheet.right+1||r.top<sheet.top||r.bottom>sheet.bottom+1),overflow:document.documentElement.scrollWidth>innerWidth,font:document.fonts.check('400 100px "Sedgwick Ave Display"','PORTFOLIO')};
+    });
+    assert.deepEqual(layout.conflicts,[],JSON.stringify({viewport,layout}));
+    assert.equal(layout.filter,'grayscale(1)');assert.equal(layout.fit,'contain');
+    assert.deepEqual(layout.natural,[765,1024]);
+    assert.ok(Math.abs(layout.ratio-765/1024)<.002);
+    assert.equal(layout.cropped,false,JSON.stringify({viewport,layout}));assert.equal(layout.overflow,false);assert.equal(layout.font,true);
+    if(viewport.width===1440||viewport.width===390)await page.locator('#cover').screenshot({path:path.join(root,`test-results/cover-${viewport.width}.png`)});
+    await page.locator('.cover-continue').click();
+    assert.equal(await page.locator('.slide.active').getAttribute('id'),'intro');
+    assert.equal(await page.locator('.floating-about').isVisible(),true);
+    assert.equal(await page.locator('#current-page').innerText(),'02');
+    await page.locator('.floating-about').click();
+    assert.equal(await page.locator('.slide.active').getAttribute('id'),'cover');
+    await page.locator('.sidebar-name').click();
+    assert.equal(await page.locator('.slide.active').getAttribute('id'),'cover');
+    assert.equal(await page.locator('#previous').isDisabled(),true);
+    await page.close();
+  }
+  const page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'no-preference'});
+  await page.goto(base,{waitUntil:'networkidle'});
+  const motion=await page.locator('.cover-person-name').evaluate(el=>{
+    const animation=el.getAnimations()[0];
+    if(!animation)return null;
+    animation.pause();animation.currentTime=160;
+    const start={y:new DOMMatrix(getComputedStyle(el).transform).m42,opacity:getComputedStyle(el).opacity};
+    animation.currentTime=1860;
+    const end={y:new DOMMatrix(getComputedStyle(el).transform).m42,opacity:getComputedStyle(el).opacity,color:getComputedStyle(el).color};
+    return {start,end};
+  });
+  assert.ok(motion&&motion.start.y<0);assert.equal(motion.end.y,0);assert.equal(motion.end.opacity,'1');assert.equal(motion.end.color,'rgb(79, 70, 229)');
+  await page.emulateMedia({reducedMotion:'reduce'});
+  assert.equal(await page.locator('.cover-person-name').evaluate(el=>getComputedStyle(el).opacity),'1');
+  assert.equal(await page.locator('.cover-person-name').evaluate(el=>getComputedStyle(el).animationName),'none');
+  assert.deepEqual(errors,[]);await browser.close();
+  console.log('PASS new cover: six viewport layouts, uncropped grayscale portrait, live title/font, name motion, reduced motion and existing navigation');
+})().catch(e=>{console.error(e);process.exit(1);});

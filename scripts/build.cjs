@@ -1,0 +1,10 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const {execFileSync}=require('node:child_process');
+const root=path.resolve(__dirname,'..');
+execFileSync(process.execPath,[path.join(__dirname,'check.cjs')],{stdio:'inherit'});
+const out=path.join(root,'dist');
+fs.mkdirSync(out,{recursive:true});
+for(const file of ['index.html','styles.css','app.js','data.json'])fs.copyFileSync(path.join(root,file),path.join(out,file));
+fs.cpSync(path.join(root,'assets'),path.join(out,'assets'),{recursive:true});
+console.log('Build ready: '+out+' (local output only; no deployment performed)');

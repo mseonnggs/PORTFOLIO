@@ -1,0 +1,639 @@
+{
+  "coverPage": {
+    "tagline": "TURNING IDEAS INTO VISUALS.",
+    "role": "VISUAL DESIGNER",
+    "title": "PORTFOLIO",
+    "photo": "assets/profile/cover-portrait.png",
+    "year": "2026",
+    "keywords": ["Digital Design", "Print & Editorial Design", "Signage & Display", "Brand Identity Design", "Web Design"]
+  },
+  "profile": {
+    "name": "장미선",
+    "photo": "assets/profile/jang-miseon.png",
+    "role": "시각디자이너",
+    "email": "wkd7437@naver.com",
+    "phone": "010-5007-7746",
+    "youtube": "https://youtube.com/@haneul-13-34?si=2cSscqpAFY22bGQy",
+    "youtubeHandle": "@haneul-13-34",
+    "kakaoId": "jmmmmms",
+    "philosophy": "시각적인 모든 것을 디자인한다.",
+    "intro": "온라인 콘텐츠와 인쇄물, 현장 사인까지. 매체에 맞게 정보를 정리하고 브랜드의 메시지를 시각화합니다. 이제 AI와 웹 기술로 직접 사용하는 디지털 경험까지 연결합니다.",
+    "source": "장미선의_이력서_및_자기소개.pdf · 최종 수정 2026.10.30 / 출력 2026.11.02",
+    "cover": {
+      "englishName": "Jang Mi-seon",
+      "specialty": "시각디자인 · 온라인 콘텐츠 · 인쇄물 · 사인",
+      "description": "온라인과 오프라인을 아우르는 실무 경험을 바탕으로, 브랜드의 메시지를 명확하게 전달합니다.",
+      "education": [
+        {
+          "title": "고려사이버대학교 졸업",
+          "description": "디자인공학과 · 2017.06"
+        },
+        {
+          "title": "생성형 AI 마스터 클래스",
+          "description": "동아일보 그룹 · 콘텐츠 플랫폼 개발 · 2026.07–11"
+        },
+        {
+          "title": "시각디자인 실무 교육",
+          "description": "허브컴퓨터학원 · 2018.08–10"
+        }
+      ],
+      "tools": [
+        {
+          "title": "GRAPHIC DESIGN",
+          "items": [
+            "Photoshop",
+            "Illustrator",
+            "InDesign"
+          ]
+        },
+        {
+          "title": "CONTENT & UI",
+          "items": [
+            "제품 촬영·보정",
+            "Premiere",
+            "Figma"
+          ]
+        },
+        {
+          "title": "WEB & AI",
+          "items": [
+            "HTML·CSS",
+            "JavaScript",
+            "Codex",
+            "Google Stitch"
+          ]
+        }
+      ]
+    }
+  },
+  "capabilities": [
+    {
+      "number": "01",
+      "title": "브랜드의 시각적 일관성",
+      "description": "컬러 가이드라인, 서식과 홍보물의 마스터 템플릿을 정리하고 매체별로 적용합니다.",
+      "tools": "브랜드 가이드 · 시각 자산"
+    },
+    {
+      "number": "02",
+      "title": "온라인 콘텐츠 디자인",
+      "description": "이벤트 상세페이지와 배너, SNS 콘텐츠를 목적과 채널에 맞춰 제작합니다.",
+      "tools": "Photoshop · Illustrator"
+    },
+    {
+      "number": "03",
+      "title": "인쇄물과 현장 제작물",
+      "description": "포스터·잡지·카탈로그부터 POP·간판·안내물까지 제작 환경을 고려합니다.",
+      "tools": "InDesign · Illustrator"
+    },
+    {
+      "number": "04",
+      "title": "촬영과 이미지 보정",
+      "description": "제품과 차량을 직접 촬영하고, 이미지 보정과 누끼 작업으로 콘텐츠를 완성합니다.",
+      "tools": "제품 촬영 · 이미지 보정"
+    },
+    {
+      "number": "05",
+      "title": "콘텐츠 기획과 협업",
+      "description": "영업관리와 마케팅 경험을 바탕으로 요청 의도, 사용 목적, 마감일을 정리합니다.",
+      "tools": "요청 정리 · 제작 일정 관리"
+    },
+    {
+      "number": "06",
+      "title": "AI를 활용한 웹 프로젝트",
+      "description": "콘텐츠 구성과 화면 설계, 사용자 흐름부터 AI를 활용한 웹 구현과 배포를 경험했습니다.",
+      "tools": "HTML · JavaScript · AI 도구"
+    }
+  ],
+  "companies": [
+    {
+      "id": "rtm",
+      "name": "알티엠파트너스",
+      "period": "2025.09 — 2026.04",
+      "duration": "8개월",
+      "position": "마케팅팀 차장",
+      "job": "시각디자이너",
+      "summary": "브랜드 가이드라인과 시각 자산을 정리하고, 웹·SNS·인쇄물의 일관성을 관리했습니다.",
+      "scope": [
+        "브랜드 컬러 가이드라인 및 마스터 템플릿 제작·관리",
+        "SNS·브랜드검색 광고·블로그 콘텐츠 디자인",
+        "웹페이지 레이아웃과 타이포그래피 정비",
+        "기업 소개·카탈로그 등 인쇄 홍보물 제작"
+      ]
+    },
+    {
+      "id": "angel",
+      "name": "제주엔젤렌트카",
+      "period": "2024.09 — 2025.07",
+      "duration": "11개월",
+      "position": "마케팅팀 주임/계장 · 팀원",
+      "job": "시각디자이너",
+      "summary": "차량 촬영과 홈페이지 콘텐츠부터 SNS, 오프라인 안내물까지 마케팅 제작물을 담당했습니다.",
+      "scope": [
+        "차량 촬영·보정·누끼 이미지 제작",
+        "이벤트 상세페이지·메인 배너·팝업 디자인",
+        "카드뉴스 및 숏폼 영상 촬영·편집",
+        "명함·주차증·차량 스티커·X배너·안내물 제작"
+      ]
+    },
+    {
+      "id": "safenet",
+      "name": "세이프넷티앤씨",
+      "period": "2021.06 — 2024.03",
+      "duration": "2년 10개월",
+      "position": "대리 · 팀원",
+      "job": "시각디자이너",
+      "summary": "안전용품 유통에 필요한 제품 촬영과 온라인 사이트 운영, 잡지·카탈로그 디자인을 담당했습니다.",
+      "scope": [
+        "블랙야크·마운티아·프로스펙스 등 취급 제품 촬영·보정",
+        "상품 이미지·정보 등록 및 사이트 디자인·운영",
+        "온라인 배너 및 대형·소형 포스터 제작",
+        "계절별 잡지·제품 카탈로그·명함 디자인·제작"
+      ]
+    }
+  ],
+  "earlierCareers": [
+    {
+      "company": "(주)리가든컴퍼니",
+      "period": "2019.07 — 2021.06",
+      "position": "생산관리",
+      "job": "영업관리",
+      "description": "이력서 부서·직책: 생산관리 / 주요직무: 영업관리"
+    },
+    {
+      "company": "에이엔에이치인터내셔널",
+      "period": "2016.03 — 2018.03",
+      "position": "관리팀 사원",
+      "job": "상품기획",
+      "description": "패션 부문 오프라인 영업·판매·계약서 관리"
+    },
+    {
+      "company": "엠큐네트웍스㈜",
+      "period": "2013.07 — 2014.07",
+      "position": "영업관리팀 팀원",
+      "job": "영업관리·영업지원",
+      "description": "CVS 발주·마감 및 대표실 지원"
+    },
+    {
+      "company": "대원게임",
+      "period": "2008.10 — 2012.10",
+      "position": "영업관리 팀원",
+      "job": "영업관리·물류정산·영업지원·전자상거래·판매집계",
+      "description": "판매집계 및 온라인 주문·발주 관리"
+    },
+    {
+      "company": "영진약품㈜",
+      "period": "2007.01 — 2008.01",
+      "position": "영업관리팀",
+      "job": "거래처관리·영업지원",
+      "description": "영업관리·영업지원·수금관리·월마감"
+    }
+  ],
+  "works": [
+    {
+      "id": "rtm-detail",
+      "company": "rtm",
+      "name": "직장인 미국 영주권 프로그램 상세페이지",
+      "type": "detail",
+      "purpose": "직장인 대상 미국 영주권 프로그램 안내",
+      "role": "이력서의 웹 콘텐츠·레이아웃·타이포그래피 업무와 연결. 이 상세페이지의 세부 담당 범위는 확인 필요",
+      "filename": "장미선Portfolio_상세페이지.jpg",
+      "image": "assets/works/rtm/rtm-detail-full.jpg",
+      "preview": null,
+      "description": "제공된 상세페이지 원본 · 이미지 내 RTM파트너스 표기 확인",
+      "required": "세부 담당 범위·제작 시기 확인",
+      "status": "role-unverified",
+      "companySource": "이미지 내 RTM파트너스 표기와 이력서의 알티엠파트너스 회사명을 대조"
+    },
+    {
+      "id": "rtm-digital",
+      "company": "rtm",
+      "name": "브랜드 웹·SNS 콘텐츠",
+      "type": "online",
+      "purpose": "웹사이트·SNS·광고 채널의 브랜드 메시지 전달",
+      "role": "SNS 및 광고 시각자료 제작, 웹페이지 레이아웃·타이포그래피 정비",
+      "filename": "rtm-digital.jpg",
+      "image": null,
+      "preview": null,
+      "description": "알티엠파트너스 웹·SNS·광고 콘텐츠 이미지 추가 예정",
+      "required": "대표 웹페이지 또는 SNS·브랜드검색 광고 실제 제작 이미지",
+      "status": "missing"
+    },
+    {
+      "id": "rtm-print",
+      "company": "rtm",
+      "name": "기업 소개·인쇄 홍보물",
+      "type": "editorial",
+      "purpose": "기업 정보와 브랜드 소개",
+      "role": "기업 소개·카탈로그 등 인쇄물 디자인 및 제작 관리",
+      "filename": "rtm-print.jpg",
+      "image": null,
+      "preview": null,
+      "description": "알티엠파트너스 인쇄 홍보물 이미지 추가 예정",
+      "required": "기업 소개서 또는 카탈로그 표지와 대표 내지",
+      "status": "missing"
+    },
+    {
+      "id": "angel-event",
+      "company": "angel",
+      "name": "이벤트 상세페이지",
+      "type": "detail",
+      "purpose": "홈페이지 이벤트와 제휴 콘텐츠 안내",
+      "role": "이벤트 상세페이지·썸네일·팝업 이미지 디자인 및 업로드",
+      "filename": "angel-event-full.jpg",
+      "image": null,
+      "preview": null,
+      "description": "제주엔젤렌트카 이벤트 상세페이지 이미지 추가 예정",
+      "required": "상세페이지 원본 전체 이미지와 선택적인 대표 부분 이미지",
+      "status": "missing"
+    },
+    {
+      "id": "angel-banner",
+      "company": "angel",
+      "name": "홈페이지 메인 배너",
+      "type": "banner",
+      "purpose": "홈페이지 주요 이벤트 홍보",
+      "role": "홈페이지 메인 배너·카테고리 배너 제작",
+      "filename": "angel-banner.jpg",
+      "image": null,
+      "preview": null,
+      "description": "제주엔젤렌트카 가로 배너 이미지 추가 예정",
+      "required": "가로 비율을 유지한 배너 원본",
+      "status": "missing"
+    },
+    {
+      "id": "angel-print",
+      "company": "angel",
+      "name": "현장 안내물·인쇄물",
+      "type": "poster",
+      "purpose": "고객 동선 안내와 현장 프로모션",
+      "role": "명함·주차증·스티커·외부 배너·키오스크 안내물 디자인 및 발주·출력",
+      "filename": "angel-print.jpg",
+      "image": null,
+      "preview": null,
+      "description": "제주엔젤렌트카 안내물·인쇄물 이미지 추가 예정",
+      "required": "X배너·안내물 전체 디자인 또는 명함·스티커 제작 이미지",
+      "status": "missing"
+    },
+    {
+      "id": "safenet-photo",
+      "company": "safenet",
+      "name": "제품 촬영·온라인 콘텐츠",
+      "type": "photo",
+      "purpose": "안전용품 온라인 판매와 상품 정보 제공",
+      "role": "취급 제품 직접 촬영·보정, 상품 이미지·정보 등록, 사이트 배너 제작",
+      "filename": "safenet-photo.jpg",
+      "image": null,
+      "preview": null,
+      "description": "세이프넷티앤씨 제품 촬영·배너 이미지 추가 예정",
+      "required": "직접 촬영한 제품 보정본 또는 온라인 배너",
+      "status": "missing"
+    },
+    {
+      "id": "safenet-catalog",
+      "company": "safenet",
+      "name": "계절별 잡지·제품 카탈로그",
+      "type": "editorial",
+      "purpose": "계절별 제품 소개와 상품 정보 전달",
+      "role": "계절별 잡지·제품 카탈로그 디자인·제작",
+      "filename": "safenet-catalog.jpg",
+      "image": null,
+      "preview": null,
+      "description": "세이프넷티앤씨 카탈로그 이미지 추가 예정",
+      "required": "잡지 또는 카탈로그의 표지·펼침면 실제 이미지",
+      "status": "missing"
+    },
+    {
+      "id": "safenet-poster",
+      "company": "safenet",
+      "name": "대형·소형 포스터",
+      "type": "poster",
+      "purpose": "온·오프라인 제품 홍보",
+      "role": "대형·소형 포스터 디자인·제작",
+      "filename": "safenet-poster.jpg",
+      "image": null,
+      "preview": null,
+      "description": "세이프넷티앤씨 포스터 이미지 추가 예정",
+      "required": "포스터 전체 디자인이 보이는 원본",
+      "status": "missing"
+    },
+    {
+      "id": "unassigned-sign",
+      "company": null,
+      "name": "사인디자인·POP",
+      "type": "sign",
+      "purpose": "현장 정보와 브랜드 안내",
+      "role": "제작 회사 및 개별 작업의 담당 범위 확인 필요",
+      "filename": "unassigned-sign.jpg",
+      "image": null,
+      "preview": null,
+      "description": "사인디자인·POP 이미지 추가 예정 · 제작 회사 확인 필요",
+      "required": "간판·POP 전체 이미지, 제작 회사·제작 시기·담당 범위",
+      "status": "unverified"
+    },
+    {
+      "id": "unassigned-detail",
+      "company": null,
+      "name": "뷰티 상세페이지",
+      "type": "detail",
+      "purpose": "상품 정보 안내",
+      "role": "이력서 첨부명만 확인됨. 제작 회사 및 담당 범위 확인 필요",
+      "filename": "뷰티-상세페이지.jpg",
+      "image": null,
+      "preview": null,
+      "description": "뷰티 상세페이지 이미지 추가 예정 · 제작 회사 확인 필요",
+      "required": "뷰티-상세페이지.jpg 원본 및 제작 회사·담당 범위",
+      "status": "unverified"
+    }
+  ],
+  "projects": [
+    {
+      "id": "tail",
+      "name": "꼬리별지도",
+      "english": "Tail Star Map",
+      "subtitle": "반려동물과 함께할 공간을 찾는 경험",
+      "description": "반려동물 동반 공간을 찾고, 이용 조건을 비교하고, 관심 장소를 지도에서 다시 보는 웹 서비스입니다. 장소 정보의 분석부터 기획·UI/UX·AI 활용 구현까지 연결한 개인 프로젝트입니다.",
+      "role": "개인 프로젝트 · 데이터 분포·품질 점검, 서비스 기획, UI/UX 설계, AI를 활용한 React 구현·수정·검증",
+      "roleNote": "Tail Star Map PDF 14p 기준. 화면 구성·정렬·여백·상태·상호작용을 결정하고, AI 코딩 도구로 인증·찜·지도·문의 기능을 구현했습니다.",
+      "url": "https://tail-star-map.vercel.app",
+      "pdf": "assets/documents/tail-star-map.pdf",
+      "pdfFilename": "tail-star-map.pdf",
+      "image": "assets/projects/tail-star-map-live.png",
+      "imageNote": "실제 운영 사이트 전체 화면 캡처 · 2026.11.02",
+      "source": "제공된 Tail Star Map PDF 14p · 실제 공개 화면",
+      "flowImage": "assets/projects/tail-favorites-example.png",
+      "flowImageNote": "제공 PDF 8p의 화면 예시 · 실제 시설 정보로 구성한 예시이며 실제 계정의 저장 결과가 아닙니다.",
+      "process": [
+        {
+          "title": "데이터를 탐색 기준으로",
+          "description": "시설명·도로명주소로 중복을 통합하고, 지역·카테고리·이용 조건을 탐색 구조에 연결했습니다."
+        },
+        {
+          "title": "불명확한 조건도 안내",
+          "description": "동반 정책의 충돌과 결측값을 점검하고, 확정하기 어려운 정보에는 확인 필요와 방문 전 확인 안내를 제공합니다."
+        },
+        {
+          "title": "시각 언어와 흐름 연결",
+          "description": "하늘색 선택 상태, 조건 배지, 하트 저장을 일관되게 적용하고 목록에서 지도까지 행동을 연결했습니다."
+        },
+        {
+          "title": "AI와 구현하고 화면에서 검증",
+          "description": "React 화면과 인증·찜·지도·문의 연결을 AI 코딩 도구로 구현하고, 실제 화면을 보며 정렬·여백·클릭 범위를 수정했습니다."
+        }
+      ],
+      "tech": "React · TypeScript · Vercel Functions · Supabase PostgreSQL / Auth · NAVER Maps",
+      "next": "실제 사용자 검색·찜·지도 과제 검증과 시설 정보의 변경·폐업 확인이 다음 과제입니다. 반려생활 기록은 작성·미리보기 단계입니다."
+    },
+    {
+      "id": "pulse",
+      "name": "PulseHealth",
+      "english": "Health Dashboard",
+      "subtitle": "디자인을 작동하는 대시보드로",
+      "description": "Google Stitch의 디자인을 바탕으로 Codex를 활용해 구현한 반응형 건강 데이터 대시보드 프로토타입입니다.",
+      "role": "Stitch: 디자인 시안 / 본인: Codex를 활용한 구현·반응형 확장·인터랙션 작업",
+      "roleNote": "PulseHealth PDF 2·5p 기준. 모바일 중심 Stitch 원본을 MCP로 확인하고, 시각 요소를 유지하며 React 화면·반응형 배치·인터랙션으로 확장했습니다.",
+      "url": "https://health-dashboard-pearl-kappa.vercel.app/",
+      "pdf": "assets/documents/pulsehealth.pdf",
+      "pdfFilename": "pulsehealth.pdf",
+      "image": "assets/projects/pulse-pc.png",
+      "imageNote": "제공 PulseHealth PDF 3p의 실제 PC 캡처 · 샘플 데이터",
+      "source": "제공된 PulseHealth PDF 5p · 최종 정리 2026.10.30",
+      "requestedScope": [
+        {
+          "title": "디자인에서 구현으로",
+          "description": "모바일 중심 Stitch 디자인을 MCP로 확인하고 React·TypeScript·Vite로 구현했습니다. 어두운 배경, 민트·라벤더·오렌지, 둥근 카드와 원형 진행률을 유지했습니다."
+        },
+        {
+          "title": "반응형 탐색과 기록",
+          "description": "샘플로 바로 진입하고 기간·목표·통계를 탐색합니다. 기록 추가·수정·삭제와 입력 검증을 연결했습니다."
+        },
+        {
+          "title": "공통 인터랙션",
+          "description": "공통 달력·목표 알림·운동 타이머를 구현했습니다. 타이머는 시작·재개 시각을 기준으로 복원합니다."
+        },
+        {
+          "title": "브라우저 안의 데이터",
+          "description": "개인·샘플 데이터를 분리해 브라우저에 저장하고, JSON 내보내기와 검증 후 교체 복원을 제공합니다."
+        }
+      ],
+      "screens": [
+        {
+          "name": "PC · 1440px",
+          "image": "assets/projects/pulse-pc.png",
+          "note": "3열 카드와 사이드바"
+        },
+        {
+          "name": "태블릿 · 768px",
+          "image": "assets/projects/pulse-tablet.png",
+          "note": "2열 배치"
+        },
+        {
+          "name": "모바일 · 390px",
+          "image": "assets/projects/pulse-mobile.png",
+          "note": "단일 열과 하단 탐색"
+        }
+      ],
+      "next": "실제 사용자 스마트폰의 건강 데이터 연동과 개인 건강 기록 관리로 확장할 계획입니다. 실물 모바일 기기·다른 브라우저 엔진·배포 환경의 추가 검증도 후속 과제입니다."
+    }
+  ],
+  "pages": [
+    {
+      "id": "cover",
+      "title": "표지",
+      "group": "ABOUT",
+      "groupLabel": "소개와 경력",
+      "kind": "cover"
+    },
+    {
+      "id": "intro",
+      "title": "소개",
+      "group": "ABOUT",
+      "groupLabel": "소개와 경력",
+      "kind": "intro"
+    },
+    {
+      "id": "profile",
+      "title": "프로필·핵심 역량",
+      "group": "ABOUT",
+      "groupLabel": "소개와 경력",
+      "kind": "profile"
+    },
+    {
+      "id": "career",
+      "title": "경력 개요",
+      "group": "ABOUT",
+      "groupLabel": "소개와 경력",
+      "kind": "career"
+    },
+    {
+      "id": "rtm-online",
+      "title": "알티엠 · 브랜드와 온라인",
+      "group": "EXPERIENCE",
+      "groupLabel": "회사별 실무와 작업물",
+      "kind": "company",
+      "company": "rtm",
+      "headline": "브랜드의 기준을 정리하고,\n채널에 일관되게 적용합니다.",
+      "workIds": [
+        "rtm-detail",
+        "rtm-digital"
+      ]
+    },
+    {
+      "id": "rtm-offline",
+      "title": "알티엠 · 인쇄 홍보물",
+      "group": "EXPERIENCE",
+      "groupLabel": "회사별 실무와 작업물",
+      "kind": "company",
+      "company": "rtm",
+      "headline": "화면의 메시지를\n인쇄물까지 이어갑니다.",
+      "workIds": [
+        "rtm-print"
+      ]
+    },
+    {
+      "id": "angel-online",
+      "title": "제주엔젤 · 온라인 콘텐츠",
+      "group": "EXPERIENCE",
+      "groupLabel": "회사별 실무와 작업물",
+      "kind": "company",
+      "company": "angel",
+      "headline": "고객과 만나는 순간을\n콘텐츠로 만듭니다.",
+      "workIds": [
+        "angel-event",
+        "angel-banner"
+      ]
+    },
+    {
+      "id": "angel-offline",
+      "title": "제주엔젤 · 현장 제작물",
+      "group": "EXPERIENCE",
+      "groupLabel": "회사별 실무와 작업물",
+      "kind": "company",
+      "company": "angel",
+      "headline": "온라인을 넘어,\n현장에서 쓰이는 디자인.",
+      "workIds": [
+        "angel-print"
+      ]
+    },
+    {
+      "id": "safenet-online",
+      "title": "세이프넷 · 촬영과 온라인",
+      "group": "EXPERIENCE",
+      "groupLabel": "회사별 실무와 작업물",
+      "kind": "company",
+      "company": "safenet",
+      "headline": "직접 촬영한 제품을\n판매 콘텐츠로 연결합니다.",
+      "workIds": [
+        "safenet-photo"
+      ]
+    },
+    {
+      "id": "safenet-print",
+      "title": "세이프넷 · 편집과 인쇄",
+      "group": "EXPERIENCE",
+      "groupLabel": "회사별 실무와 작업물",
+      "kind": "company",
+      "company": "safenet",
+      "headline": "제품의 정보를 정돈하는\n편집과 인쇄 디자인.",
+      "workIds": [
+        "safenet-catalog",
+        "safenet-poster"
+      ]
+    },
+    {
+      "id": "unassigned",
+      "title": "미분류 작업물",
+      "group": "EXPERIENCE",
+      "groupLabel": "회사별 실무와 작업물",
+      "kind": "unassigned",
+      "workIds": [
+        "unassigned-sign",
+        "unassigned-detail"
+      ]
+    },
+    {
+      "id": "tail",
+      "title": "꼬리별지도",
+      "group": "PROJECTS",
+      "groupLabel": "개인 프로젝트",
+      "kind": "project",
+      "project": "tail"
+    },
+    {
+      "id": "tail-flow",
+      "title": "꼬리별지도 · 사용자 흐름",
+      "group": "PROJECTS",
+      "groupLabel": "개인 프로젝트",
+      "kind": "tailFlow",
+      "project": "tail"
+    },
+    {
+      "id": "tail-process",
+      "title": "꼬리별지도 · 기획과 구현",
+      "group": "PROJECTS",
+      "groupLabel": "개인 프로젝트",
+      "kind": "tailProcess",
+      "project": "tail"
+    },
+    {
+      "id": "pulse",
+      "title": "PulseHealth",
+      "group": "PROJECTS",
+      "groupLabel": "개인 프로젝트",
+      "kind": "project",
+      "project": "pulse"
+    },
+    {
+      "id": "pulse-responsive",
+      "title": "PulseHealth · 반응형 화면",
+      "group": "PROJECTS",
+      "groupLabel": "개인 프로젝트",
+      "kind": "pulseResponsive",
+      "project": "pulse"
+    },
+    {
+      "id": "pulse-scope",
+      "title": "PulseHealth · 구현 범위",
+      "group": "PROJECTS",
+      "groupLabel": "개인 프로젝트",
+      "kind": "pulseScope",
+      "project": "pulse"
+    },
+    {
+      "id": "contact",
+      "title": "연락처",
+      "group": "CONTACT",
+      "groupLabel": "함께할 다음 작업",
+      "kind": "contact"
+    }
+  ],
+  "imageDimensions": {
+    "assets/projects/pulse-mobile.png": {
+      "width": 390,
+      "height": 844
+    },
+    "assets/projects/pulse-pc.png": {
+      "width": 1440,
+      "height": 1000
+    },
+    "assets/projects/pulse-tablet.png": {
+      "width": 768,
+      "height": 1024
+    },
+    "assets/projects/tail-favorites-example.png": {
+      "width": 1100,
+      "height": 842
+    },
+    "assets/projects/tail-mobile-pdf.png": {
+      "width": 780,
+      "height": 1688
+    },
+    "assets/projects/tail-search-pdf.png": {
+      "width": 2200,
+      "height": 1270
+    },
+    "assets/projects/tail-star-map-live.png": {
+      "width": 1440,
+      "height": 3012
+    }
+  }
+}

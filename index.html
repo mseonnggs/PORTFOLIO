@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="description" content="시각디자이너 장미선. 온라인 콘텐츠, 인쇄물, 사인디자인에서 AI를 활용한 디지털 프로젝트까지.">
+  <title>장미선 — 시각디자인 포트폴리오</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/SedgwickAveDisplay-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <aside class="sidebar" aria-label="포트폴리오 목차">
+    <div class="sidebar-profile">
+      <p class="sidebar-profession">Visual Designer</p>
+      <a class="identity sidebar-name" href="#cover" data-back-top><span class="profile-dot" aria-hidden="true"></span><span><span class="portfolio-title-name">장미선의 </span><span class="portfolio-title-accent">포트폴리오</span></span></a>
+      <a class="sidebar-about" href="#intro"><span>About Me</span><span aria-hidden="true">↗</span></a>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" aria-label="목차 열기" aria-expanded="false" aria-controls="contents"><span aria-hidden="true">＋</span></button>
+    <nav id="contents" aria-label="전체 페이지"></nav>
+    <nav class="sidebar-bottom sidebar-shortcuts" aria-label="빠른 이동"><a href="#contact">연락처</a><a href="#cover" data-back-top>맨 위로 <span aria-hidden="true">↑</span></a></nav>
+  </aside>
+  <div class="workspace">
+    <main id="main" tabindex="-1"></main>
+    <footer class="deck-footer">
+      <div class="page-status"><span id="current-page">01</span><span class="muted">/ <span id="total-pages">18</span></span><span class="footer-title" id="page-title">표지</span></div>
+      <div class="navigation"><button id="previous" type="button" aria-label="이전 페이지">← <span>이전</span></button><button id="next" type="button" aria-label="다음 페이지"><span>다음</span> →</button></div>
+      <div class="progress" role="progressbar" aria-label="포트폴리오 읽기 진행률" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress-fill"></span></div>
+    </footer>
+  </div>
+  <a class="floating-about" href="#cover" data-back-top aria-label="표지로 이동"><span aria-hidden="true">↑</span></a>
+  <dialog id="image-dialog" aria-labelledby="zoom-title">
+    <div class="dialog-header"><h2 id="zoom-title">작업물 전체 보기</h2><button id="close-dialog" type="button">닫기 <span aria-hidden="true">×</span></button></div>
+    <div class="zoom-scroll" tabindex="0" aria-label="이미지 전체 보기, 세로로 스크롤할 수 있습니다"><img id="zoom-image" alt=""></div>
+  </dialog>
+  <div class="sr-only" id="announcer" role="status" aria-live="polite"></div>
+  <noscript>포트폴리오의 페이지 이동을 사용하려면 JavaScript를 켜 주세요. 연락처: wkd7437@naver.com</noscript>
+</body>
+</html>

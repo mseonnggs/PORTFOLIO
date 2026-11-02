@@ -8,7 +8,7 @@ const base=process.env.TEST_BASE_URL||'http://127.0.0.1:4173';
 (async()=>{
   const browser=await chromium.launch({channel:process.env.TEST_BROWSER_CHANNEL||'chrome',headless:true});
   const errors=[];
-  for(const viewport of [{width:360,height:800},{width:390,height:844},{width:768,height:1024},{width:1024,height:768},{width:1440,height:1000},{width:1920,height:1080}]){
+  for(const viewport of [{width:320,height:740},{width:360,height:800},{width:390,height:844},{width:440,height:948},{width:768,height:1024},{width:1000,height:800},{width:1024,height:768},{width:1440,height:1000},{width:1920,height:1080}]){
     const page=await browser.newPage({viewport,reducedMotion:'reduce'});
     page.on('pageerror',e=>errors.push(e.message));
     await page.goto(base,{waitUntil:'networkidle'});
@@ -19,14 +19,26 @@ const base=process.env.TEST_BASE_URL||'http://127.0.0.1:4173';
     assert.equal(await page.locator('.cover-tagline').innerText(),data.coverPage.tagline);
     assert.equal(await page.locator('.cover-handwritten').innerText(),'PORTFOLIO');
     assert.deepEqual(await page.locator('.cover-keyword').allTextContents(),data.coverPage.keywords);
+    assert.equal(await page.locator('.cover-keyword:visible').count(),viewport.width<=1000?0:5);
     const layout=await page.evaluate(()=>{
       const sheet=document.querySelector('.cover-sheet').getBoundingClientRect();
       const photo=document.querySelector('.cover-portrait'),portrait=photo.getBoundingClientRect();
-      const labels=[...document.querySelectorAll('.cover-keyword')].map(el=>el.getBoundingClientRect());
+      const labels=[...document.querySelectorAll('.cover-keyword')].filter(el=>el.getClientRects().length).map(el=>el.getBoundingClientRect());
       const range=document.createRange();range.selectNodeContents(document.querySelector('.cover-handwritten'));
       const title=range.getBoundingClientRect();
       const overlap=(a,b)=>a.left<b.right-1&&a.right>b.left+1&&a.top<b.bottom-1&&a.bottom>b.top+1;
       const conflicts=[];
+      if(innerWidth<=1000){
+        const signature=document.querySelector('.cover-signature').getBoundingClientRect();
+        const navigation=document.querySelector('.cover-end').getBoundingClientRect();
+        if(overlap(signature,title))conflicts.push('signature-title');
+        labels.forEach((label,i)=>{
+          if(overlap(signature,label))conflicts.push('signature-keyword-'+i);
+          if(overlap(navigation,label))conflicts.push('navigation-keyword-'+i);
+        });
+        if(signature.top<Math.max(...labels.map(r=>r.bottom))+12)conflicts.push('signature-keyword-gap');
+        if(navigation.top-signature.bottom<37)conflicts.push('signature-navigation-gap');
+      }
       if(overlap(portrait,title))conflicts.push('portrait-title');
       if(title.top-portrait.bottom<12)conflicts.push('portrait-title-gap');
       labels.forEach((a,i)=>{

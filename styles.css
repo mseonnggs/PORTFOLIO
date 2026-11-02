@@ -82,3 +82,28 @@ body.on-cover .floating-about{visibility:hidden;pointer-events:none}
 
 /* Resize only the glyph inside the floating back-to-cover button. */
 .floating-about > span{display:inline-block;scale:.6}
+
+/* About introduction matched to the supplied layout reference. */
+.slide-intro .overview-label{margin-bottom:62px}
+.overview-hero{align-items:start;gap:32px;margin-bottom:60px}
+.overview-intro h1.overview-name{font-size:40px;font-weight:700;line-height:1.15;letter-spacing:-.035em;margin:2px 0 0}
+.overview-role{font-size:28px;font-weight:500;line-height:1.2;letter-spacing:-.035em}
+.overview-specialty{margin-top:20px;font-size:19px;line-height:1.5}
+.overview-description{font-size:16px;line-height:1.5;color:#777;max-width:none;margin-top:3px}
+@media(max-width:650px){.slide-intro .overview-label{margin-bottom:28px}.overview-hero{gap:18px;margin-bottom:36px}.overview-intro h1.overview-name{font-size:30px}.overview-role{font-size:22px}.overview-specialty{font-size:17px;margin-top:12px}.overview-description{font-size:16px;line-height:1.65}}
+
+/* Spread the two outer keyword boxes while retaining the mobile arrangement. */
+@media(min-width:1201px){.keyword-1{translate:-2cm 0}.keyword-5{translate:2cm 0}}
+@media(min-width:1001px) and (max-width:1200px){.keyword-1{translate:-12px 0}.keyword-5{translate:12px 0}}
+
+/* Mobile uses normal document flow instead of desktop cover offsets. */
+@media(max-width:1000px){.cover-sheet{padding-bottom:32px}.cover-sheet > .cover-heading,.cover-sheet > .cover-stage,.cover-sheet > .cover-signature,.cover-sheet > .cover-end{translate:none}.cover-heading{margin-top:32px}.cover-signature,.cover-end{top:auto}.cover-signature{margin-top:20px}.cover-end{margin-top:calc(1cm + 12px);margin-bottom:0}.cover-keyword{translate:none}.overview-intro{min-width:0}.project-heading h2>span{display:block;margin:8px 0 0}}
+
+.contact-mobile-break{display:none}
+@media(max-width:1000px){.contact-mobile-break{display:initial}}
+
+/* Hide keyword outlines only in the mobile cover layout. */
+@media(max-width:1000px){.cover-keyword{border-color:transparent}}
+
+/* Mobile cover omits specialty tags and closes the space before the signature. */
+@media(max-width:1000px){.cover-keywords,.cover-keyword{display:none}.cover-stage{padding-bottom:0;margin-bottom:0}.cover-signature{margin-top:16px}}
